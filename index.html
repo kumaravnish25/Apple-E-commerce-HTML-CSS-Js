@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <title>Apple E-commerce Product page</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <!-- navbar -->
+      <nav class="navbar">
+        <section class="nav-center">
+          <!-- nav-left -->
+          <div class="nav-left">
+            <button class="toggle-btn">
+              <img src="./images/icon-menu.svg" alt="toggle-menu" />
+            </button>
+
+            <!-- sidebar -->
+            <aside class="sidebar">
+              <header class="sidebar-header">
+                <button class="close-btn">
+                  <img src="./images/icon-close.svg" alt="close-btn" />
+                </button>
+              </header>
+              <ul class="nav-links">
+                <li><a href="#Iphone" class="nav-link">Iphone</a></li>
+                <li><a href="#2" class="nav-link">Ipad</a></li>
+                <li><a href="#3" class="nav-link">Mackbook</a></li>
+                <li><a href="#about-css" class="nav-link">about</a></li>
+              </ul>
+            </aside>
+            <!-- end of sidebar -->
+          </div>
+
+          <!-- nav-right -->
+          <div class="nav-right">
+            <button class="cart-btn">
+              <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                  fill-rule="nonzero"
+                />
+              </svg>
+              <span class="amount-product-cart">11</span>
+            </button>
+            <!-- <button class="avatar-btn">
+              <img
+                src="./images/image-avatar.png"
+                class="avatar img"
+                alt="user avatar"
+              />
+            </button> -->
+          </div>
+
+          <!-- cart -->
+          <aside class="cart">
+            <header class="cart-header">
+              <p>cart</p>
+            </header>
+            <div class="separator"></div>
+            <!-- cart content -->
+            <p class="empty-alert">Your cart is empty.</p>
+            <section class="cart-content">
+              <!-- cart products -->
+              <div class="cart-products"></div>
+              <!-- cart btn -->
+              <button class="btn checkout">checkout</button>
+            </section>
+          </aside>
+          <!-- end of cart -->
+        </section>
+      </nav>
+      <!-- end of navbar -->
+
+      <!-- product section -->
+      <section class="section-center product-section">
+        <section class="product-component" id="Iphone">
+          <!-- image gallery -->
+          <div class="images-gallery">
+            <!-- main image -->
+            <figcaption class="main-image">
+              <!--prev button -->
+              <button class="prev-btn">
+                <img src="./images/icon-previous.svg" alt="previous icon" />
+              </button>
+              <img
+                src="./images/iphone-1.jpg"
+                alt="image product 1"
+                class="main img"
+              />
+              <!--next button -->
+              <button class="next-btn">
+                <img src="./images/icon-next.svg" alt="next icon" />
+              </button>
+            </figcaption>
+            <!-- gallery thumbnails for desktop -->
+            <div class="images-thumbnails">
+              <figcaption class="thumbnails-image selected">
+                <img
+                  src="./images/iphone-1.jpg"
+                  alt="image thumbnails 1"
+                  class="img"
+                />
+              </figcaption>
+              <figcaption class="thumbnails-image">
+                <img
+                  src="./images/iphone-2.jpg"
+                  alt="image thumbnails 2"
+                  class="img"
+                />
+              </figcaption>
+              <figcaption class="thumbnails-image">
+                <img
+                  src="./images/iphone-3.jpg"
+                  alt="image thumbnails 3"
+                  class="img"
+                />
+              </figcaption>
+              <figcaption class="thumbnails-image">
+                <img
+                  src="./images/iphone-4.jpg"
+                  alt="image thumbnails 4"
+                  class="img"
+                />
+              </figcaption>
+            </div>
+          </div>
+          <!--product description -->
+          <article class="product-description">
+            <h3 class="company">Apple, I-Phone</h3>
+            <h1 class="product-name">Apple iPhone 15 Pro Max (1 TB)</h1>
+            <p class="description">
+                New Apple iPhone 15 Pro Max. Aerospace-grade titanium design, making it both strong and light. USB-C connector. All-day battery life up to 29hrs video playback. 48MP main camera with multiple focal lengths, like having seven pro lenses in your pocket.
+            </p>
+            <div class="product-offer">
+              <p class="price">₹1,99,900 <span class="promotion"> 20% </span></p>
+              <p class="crossed-out-price">₹2,29,900</p>
+            </div>
+            <!-- call to action-->
+            <div class="call-to-action">
+              <div class="quantity-button">
+                <button class="minus">
+                  <img src="./images/icon-minus.svg" alt="min" />
+                </button>
+                <span class="amount">0</span>
+                <button class="plus">
+                  <img src="./images/icon-plus.svg" alt="plus" />
+                </button>
+              </div>
+              <button type="submit" class="btn add-to-cart">
+                <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+                add to cart
+              </button>
+            </div>
+          </article>
+        </section>
+      </section>
+      <!-- end of product section -->
+
+      <!-- modal lightbox -->
+      <section class="modal">
+        <!-- image gallery -->
+        <div class="images-gallery">
+          <!-- main image -->
+          <figcaption class="main-image">
+            <!-- close button -->
+            <button class="close-modal">
+              <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <!--prev button -->
+            <button class="prev-btn">
+              <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11 1 3 9l8 8"
+                  stroke-width="3"
+                  fill="none"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <img
+              src="./images/image-product-1.jpg"
+              alt="image product 1"
+              class="main img"
+            />
+            <!--next button -->
+            <button class="next-btn">
+              <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m2 1 8 8-8 8"
+                  stroke-width="3"
+                  fill="none"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </figcaption>
+          <!-- gallery thumbnails for desktop -->
+          <div class="images-thumbnails">
+            <figcaption class="thumbnails-image">
+              <img
+                src="./images/iphone-1.jpg"
+                alt="image thumbnails 1"
+                class="img thumb"
+              />
+            </figcaption>
+            <figcaption class="thumbnails-image">
+              <img
+                src="./images/iphone-2.jpg"
+                alt="image thumbnails 2"
+                class="img thumb"
+              />
+            </figcaption>
+            <figcaption class="thumbnails-image">
+              <img
+                src="./images/iphone-3.jpg"
+                alt="image thumbnails 3"
+                class="img thumb"
+              />
+            </figcaption>
+            <figcaption class="thumbnails-image">
+              <img
+                src="./images/iphone-3.jpg"
+                alt="image thumbnails 4"
+                class="img thumb"
+              />
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================== -->
+      <div id="about-css">
+      <h1>About Us</h1>
+      <p>Apple Inc. designs, manufactures and markets smartphones, personal computers, tablets, wearables and accessories, and sells a variety of related services. The Company's product categories include iPhone, Mac, iPad, and Wearables, Home and Accessories. Its software platforms include iOS, iPadOS, macOS, watchOS and tvOS.</p>
+    </div>
+      <!-- ========================================================== -->
+      <footer id="Footer">
+        <div class="footer-content">
+          
+          <ul class="footer-links">
+            <li><a href="https://www.instagram.com/"><i class="uil uil-instagram-alt"></i></a></li>
+            <li><a href="https://www.facebook.com/"><i class="uil uil-facebook"></i></a></li>
+            <li><a href="https://twitter.com/home"><i class="uil uil-twitter"></i></a></li>
+            <li><a href="https://www.google.com/"><i class="uil uil-google"></i></a></li>
+          </ul>
+          <p>&copy; 2023 Kunal avnish. All rights reserved.</p>
+        </div>
+      </footer>
+      <!-- end of modal lightbox -->
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
